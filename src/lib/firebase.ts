@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA6WjLa6JXASWEXHoJd_KUgMky669CAzX8",
-  authDomain: "onboardinghelper-b4281.firebaseapp.com",
-  projectId: "onboardinghelper-b4281",
-  storageBucket: "onboardinghelper-b4281.firebasestorage.app",
-  messagingSenderId: "451483337667",
-  appId: "1:451483337667:web:2c0df1ba465e78f946f376",
-  measurementId: "G-CXW8MXWRV8"
+  apiKey: process.env.FIREBASE_CONFIG_apiKey as string,
+  authDomain: process.env.FIREBASE_CONFIG_authDomain as string,
+  projectId: process.env.FIREBASE_CONFIG_projectId as string,
+  storageBucket: process.env.FIREBASE_CONFIG_storageBucket as string,
+  messagingSenderId: process.env.FIREBASE_CONFIG_messagingSenderId as string,
+  appId: process.env.FIREBASE_CONFIG_appId as string,
+  measurementId: process.env.FIREBASE_CONFIG_measurementId as string
 };
 
 
